@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align:center;">MADDING</h1>
+    <div style="text-align:center;">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+    </div>
+
+    <div style="text-align:center;">
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="password" required>
+    </div>
+
+    <div class="Users" style="text-align:center;">
+        <input type="submit" value="Sign in">
+    </div>
+    <hr />
+
+    <div class="Todo">
+        <h3 style="text-align: center;margin: auto;"> MADDING</h3>
+  
+        <table style="text-align: center;margin: auto;">
+            <tr>
+              <td></td>
+              <td><input type="text" id="InputKegiatan"></td>
+              <td><label for="hari"></label>
+                <select id="hari" name="hari">
+                  <option value="senin">senin</option>
+                  <option value="selasa">selasa</option>
+                  <option value="rabu">rabu</option>
+                  <option value="kamis">kamis</option>
+                  <option value="jumat">jumat</option>
+                  <option value="sabtu">sabtu</option>
+                  <option value="minggu">minggu</option>
+                </select>
+              <td><input type="file" id="InputFile"></td>
+              <td><input type="button" value="Tambah" onclick="addTodo()"></td>
+            </tr>
+            <tr>
+              <th>No</th>
+              <th>Kegiatan</th>
+              <th>Hari</th>
+              <th>Poster</th>
+              <th>Setting</th>
+            </tr>
+  
+          <tbody id="resultTodo"></tbody>
+        </table>
+      </div>
+  
+      <div class="SentenceDetection"></div>
+  
+  
+      <script src="./app.js"></script>
+</body>
+
+</html>
